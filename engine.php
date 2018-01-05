@@ -33,3 +33,8 @@ function getCompletedOrders()
 
 	return curlRequest("list-promotion-products", $args);
 }
+
+
+function listPromotionProduct() {
+	
+	
