@@ -1,6 +1,6 @@
 # gearbest-api
 
-Meh...
+This is a free libray for Gearbest Associate Program written in PHP. Fork me! :)
 
 # License
 
