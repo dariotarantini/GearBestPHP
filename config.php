@@ -1,6 +1,6 @@
 <?php
 
-$args = array[
+$config = array[
 "api_key" => "",
 "lkid" => "",
 "currency" => "EUR",
