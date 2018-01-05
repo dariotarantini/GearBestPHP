@@ -1,10 +1,10 @@
-# gearbest-api
+# Gearbest-api
 
 This is a free libray for Gearbest Associate Program written in PHP. Fork me! :)
 
 # License
 
-Copyright (C) 2018
+Copyright (C) 2018 Dario Tarantini
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
