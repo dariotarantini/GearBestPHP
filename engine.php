@@ -18,9 +18,17 @@ function curlRequest($method, $args)
 
 function getCompletedOrders()
 { 
-  global $api_secret, $api_key, $currency, $lkid, $page, $time;
-
-  $sign = strtoupper(md5($api_secret."api_key".$api_key."currency".$currency."lkid".$lkid."page". $page."time".$time.$api_secret));
+  global $config;
+	$str = "";
+	$args = "";
+	
+	ksort($config);
+	foreach ($config as $key => $val)
+	{
+		$str = $str . $key . $val;
+	}
+  $sign = strtoupper(md5($api_secret . $str . $api_secret));
+	
   $args = "api_key=".$api_key."&time=".$time."&lkid=".$lkid."&currency=".$currency."&page=".$page."&sign=".$sign;
 
   return curlRequest("list-promotion-products", $args);
