@@ -1,7 +1,7 @@
 <?php
 $file = file_get_contents("./config.json");
 $config = json_decode($file, true);
-$config['time'] = time();
+$time = time();
 
 function curlRequest($method, $args)
 {
@@ -24,7 +24,7 @@ function getCompletedOrders()
         $str = $str . $key . $val;
     }
     $sign = strtoupper(md5($config['api_secret'] . $str . $config['api_secret']));
-    $args = "api_key=" . $config['api_key'] . "&time=" . $config['time'] . "&lkid=" . $config['lkid'] . "&currency=" . $config['currency'] . "&page=" . $config['page'] . "&sign=" . $sign;
+    $args = "api_key=" . $config['api_key'] . "&time=" . $time . "&lkid=" . $config['lkid'] . "&currency=" . $config['currency'] . "&page=" . $config['page'] . "&sign=" . $sign;
     return curlRequest("list-promotion-products", $args);
 }
 
@@ -38,7 +38,7 @@ function listPromotionProduct()
         $str = $str . $key . $val;
     }
     $sign = strtoupper(md5($config['api_secret'] . $str . $config['api_secret']));
-    $args = "api_key=" . $config['api_key'] . "&time=" . $config['time'] . "&lkid=" . $config['lkid'] . "&currency=" . $config['currency'] . "&page=" . $config['page'] . "&sign=" . $sign;
+    $args = "api_key=" . $config['api_key'] . "&time=" . $time . "&lkid=" . $config['lkid'] . "&currency=" . $config['currency'] . "&page=" . $config['page'] . "&sign=" . $sign;
     return curlRequest("products/list-promotion-products", $args);
 }
 
@@ -53,7 +53,7 @@ function listEventCreative($type, $category, $size)
         $str = $str . $key . $val;
     }
     $sign = strtoupper(md5($config['api_secret'] . $str . $config['api_secret']));
-    $args = "api_key=" . $config['api_key'] . "&time=" . $config['time'] . "&lkid=" . "&type=" . $type . "&category=" . $category . "&language=" . $config['language'] . "&size=" . $size . "&page=" . $config['page'] . "&sign=" . $sign . "&lkid=" . $config['lkid'];
+    $args = "api_key=" . $config['api_key'] . "&time=" . $time . "&lkid=" . "&type=" . $type . "&category=" . $category . "&language=" . $config['language'] . "&size=" . $size . "&page=" . $config['page'] . "&sign=" . $sign . "&lkid=" . $config['lkid'];
     return curlRequest("banner/list-event-creative", $args);
 }
 
@@ -68,7 +68,7 @@ function listProductCreative($type, $category)
         $str = $str . $key . $val;
     }
     $sign = strtoupper(md5($config['api_secret'] . $str . $config['api_secret']));
-    $args = "api_key=" . $config['api_key'] . "&time=" . $config['time'] . "&type=" . $type . "&category=" . $category . "&page=" . $config['page'] . "&sign=" . $sign . "&lkid=" . $config['lkid'];
+    $args = "api_key=" . $config['api_key'] . "&time=" . $time . "&type=" . $type . "&category=" . $category . "&page=" . $config['page'] . "&sign=" . $sign . "&lkid=" . $config['lkid'];
     return curlRequest("promotions/list-product-creative", $args);
 }
 
@@ -83,6 +83,6 @@ function listCoupons($type, $category)
         $str = $str . $key . $val;
     }
     $sign = strtoupper(md5($config['api_secret'] . $str . $config['api_secret']));
-    $args = "api_key=" . $config['api_key'] . "&time=" . $config['time'] . "&language=" . $config['language'] . "&category=" . $category . "&page=" . $config['page'] . "&sign=" . $sign . "&lkid=" . $config['lkid'];
+    $args = "api_key=" . $config['api_key'] . "&time=" . $time . "&language=" . $config['language'] . "&category=" . $category . "&page=" . $config['page'] . "&sign=" . $sign . "&lkid=" . $config['lkid'];
     return curlRequest("coupon/list-coupon", $args);
 }
