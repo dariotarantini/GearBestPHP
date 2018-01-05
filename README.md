@@ -5,7 +5,6 @@ This is a free libray for Gearbest Associate Program written in PHP. Fork me! :)
 # License
 
 Copyright (C) 2018 Dario Tarantini
-
 Copyright (C) 2018 Davide Turaccio
 
 This program is free software: you can redistribute it and/or modify
