@@ -31,6 +31,7 @@ function getCompletedOrders($page = 1)
 function listPromotionProduct($page = 1)
 {
     global $config;
+    global $time;
     $str = "";
     ksort($config);
     foreach ($config as $key => $val) {
@@ -45,6 +46,7 @@ function listPromotionProduct($page = 1)
 function listEventCreative($type, $category, $size, $page = 1)
 {
     global $config;
+    global $time;
     $str = "";
     ksort($config);
     foreach ($config as $key => $val) {
@@ -59,6 +61,7 @@ function listEventCreative($type, $category, $size, $page = 1)
 function listProductCreative($type, $category, $page = 1)
 {
     global $config;
+    global $time;
     $str = "";
     ksort($config);
     foreach ($config as $key => $val) {
@@ -70,9 +73,10 @@ function listProductCreative($type, $category, $page = 1)
 }
 
 
-function listCoupons($type, $category, $page = 1)
+function listCoupons($category, $page = 1)
 {
     global $config;
+    global $time;
     $str = "";
     ksort($config);
     foreach ($config as $key => $val) {
