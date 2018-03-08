@@ -11,7 +11,7 @@ function curlRequest($method, $args)
 	curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
 	$r = curl_exec($c);
 	curl_close($c);
-	return json_decode($r);
+	return json_decode($r, true);
 }
 
 
