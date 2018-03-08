@@ -267,5 +267,5 @@ function getPromotionLinks($associate_id, $urls, $link_names = NULL)
 
 	$args['sign'] = $sign;
 
-	return curlRequest('coupon/list-coupons/', $args);
+	return curlRequest('promotions/get-promotion-links/', $args);
 }
