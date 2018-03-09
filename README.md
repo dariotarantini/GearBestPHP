@@ -3,8 +3,10 @@
 This is a free libray for Gearbest Associate Program written in PHP. Fork me! :)
 
 # Doc
+
 1.1 `getCompletedOrders()`
 Get order detail when it's status is pay or completed by orderIds
+
 1.2 `listPromotionProduct()'
 
 
