@@ -2,6 +2,11 @@
 
 This is a free libray for Gearbest Associate Program written in PHP. Fork me! :)
 
+# Requirements
+`PHP5.6>` and `PHP-CURL`
+
+Tested on PHP5.6, PHP7.1 and PHP7.2
+
 # Doc
 
 1.1 `getCompletedOrders()`
