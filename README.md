@@ -18,9 +18,8 @@ Get order detail when it's status is pay or completed by orderIds
 
 
 # License
-
+```
 Copyright (C) 2018 Dario Tarantini
-Copyright (C) 2018 Davide Turaccio
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -37,3 +36,4 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 The AGPL is not applicable to the config.json file because it contains sensitive personal data, so if you 
 modify that file you can not distribute that particular file following the rules of the AGPL
+```
