@@ -7,15 +7,13 @@ This is a free libray for GearBest Associate Program written in PHP. Fork me! :)
 PHP 5.6>=
 PHP-CURL
 ```
-# DOCs
+# Installation  
+Install with composer using:  
+`composer require vpervenditti/gearbestphp`  
+or just download [GearBestPHP.php](./src/GearBestPHP.php) and include it.   
+# DOCs  
 
-1.1 `getCompletedOrders()`
-
-Get order detail when it's status is pay or completed by orderIds
-
-
-1.2 `listPromotionProduct()`
-
+All docs can be found here: https://affiliate.gearbest.com/home/api/detail
 
 # License
 ```
