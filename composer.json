@@ -1,0 +1,7 @@
+{
+    "name": "vpervenditti/GearBestPHP",
+    "description": "A free libray for GearBest Associate Program written in PHP.",
+    "require": {
+        "php": "^7.0",
+    }
+}
