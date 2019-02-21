@@ -1,7 +1,14 @@
 {
     "name": "vpervenditti/gearbestphp",
     "description": "A free libray for GearBest Associate Program written in PHP.",
+    "type": "library",
     "require": {
-        "php": "^5.6"
-    }
+        "php": ">=5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "GearBestPHP\\": "src/"
+        }
+    },
+    "license": "GNU Affero General Public License v3.0"
 }
