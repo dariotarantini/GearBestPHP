@@ -9,7 +9,7 @@ PHP-CURL
 ```
 # Installation  
 Install with composer using:  
-`composer require vpervenditti/gearbestphp`  
+`git clone https://github.com/vpervenditti/GearBestPHP`   
 or just download [GearBestPHP.php](./src/GearBestPHP.php) and include it.   
 # DOCs  
 
