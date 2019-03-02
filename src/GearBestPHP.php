@@ -1,7 +1,5 @@
 <?php
 
-namespace vpervenditti\GearBestPHP;
-
 class GearBestPHP {
     private $api_key, $api_secret, $currency;
     public function __construct($api_key, $api_secret, $currency = 'EUR'){
