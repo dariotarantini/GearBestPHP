@@ -15,6 +15,11 @@ or just download [GearBestPHP.php](./src/GearBestPHP.php) and include it.
 
 All docs can be found here: https://affiliate.gearbest.com/home/api/detail
 
+# Examples
+
+Simple example [here](./exemples/simple_client.php)
+
+
 # License
 ```
 Copyright (C) 2018 Dario Tarantini
