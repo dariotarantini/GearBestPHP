@@ -93,7 +93,7 @@ class GearBestPHP {
             }
             $args['link_names'] = $str_link_names;
         }
-        return curlRequest('promotions/get-promotion-links/', $args);
+        return $this->http('promotions/get-promotion-links/', $args);
     }
 }
 
